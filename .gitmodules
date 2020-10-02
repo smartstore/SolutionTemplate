@@ -1,0 +1,6 @@
+[submodule "SmartStoreNET"]
+	path = SmartStoreNET
+	url = https://github.com/smartstore/SmartStoreNET.git
+[submodule "extra-plugins"]
+	path = extra-plugins
+	url = https://github.com/smartstore/extra-plugins.git

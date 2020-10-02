@@ -1,0 +1,31 @@
+﻿<Language Name="Deutsch" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="Plugins.FriendlyName.SmartStore.HelloWorld" AppendRootKey="false">
+    <Value>HelloWorld</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Description.SmartStore.HelloWorld" AppendRootKey="false">
+    <Value>Detaillierte Beschreibung zu HelloWorld</Value>
+  </LocaleResource>
+  
+  <LocaleResource Name="Plugins.SmartStore.HelloWorld" AppendRootKey="false">
+    <Children>
+      <LocaleResource Name="AdminInstruction">
+        <Value>
+          <![CDATA[
+            Geben Sie zur Einrichtung dieses Plugins nachfolgend Ihre Daten an.
+          ]]>
+        </Value>
+      </LocaleResource>
+      <LocaleResource Name="MyFirstSetting">
+        <Value>Einstellung</Value>
+      </LocaleResource>
+      <LocaleResource Name="MyFirstSetting.Hint">
+        <Value>Hilfstext zur Konfigurationsmöglichkeit.</Value>
+      </LocaleResource>
+      
+      
+
+      
+      
+    </Children>
+  </LocaleResource>
+</Language>

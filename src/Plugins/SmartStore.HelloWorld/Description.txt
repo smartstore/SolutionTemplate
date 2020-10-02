@@ -1,0 +1,10 @@
+﻿FriendlyName: HelloWorld
+SystemName: SmartStore.HelloWorld
+Group: Developer
+Version: 4.0.1
+MinAppVersion: 4.0.1
+Author: SmartStore AG
+DisplayOrder: 1
+FileName: SmartStore.HelloWorld.dll
+ResourceRootKey: Plugins.SmartStore.HelloWorld
+Url: 

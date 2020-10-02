@@ -1,0 +1,20 @@
+//
+// Customize the child theme here with css overrides
+// or new selectors (for theme developers)
+// --------------------------------------------------
+
+.currency-selector,
+.shopbar-search,
+#shopbar-compare,
+#shopbar-wishlist,
+#shopbar-cart,
+.artlist-homepage-categories,
+.product-grid-home-page,
+.bestsellers,
+.manufacturer-grid,
+.block-popular-tags,
+.recently-viewed-product-grid,
+.footer-bottom > .row .col:first-child,
+#menubar-my-account {
+	display: none;
+}
