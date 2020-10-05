@@ -305,4 +305,5 @@ docs/internal
 /res/Translator/*.log
 SmartStoreNET/
 
-/commercial-plugins
+/commercial-plugins/*
+!/commercial-plugins/create-symlinks.bat
