@@ -4,269 +4,82 @@
 	<Import Project="$(MSBuildProjectDirectory)\SmartStoreNET.Tasks.Targets"/>
 	
 	<PropertyGroup>
-		<AdditionalPluginsFolder>$(BuildFolder)\AdditionalPlugins</AdditionalPluginsFolder>
-		<PremiumPluginsFolder>$(BuildFolder)\PremiumPlugins</PremiumPluginsFolder>
-		<StagePluginsFolder>$(StageFolder)\Plugins</StagePluginsFolder>
-		<PluginName></PluginName>
-		<PluginTarget></PluginTarget>
+	  <StagePluginsFolder>$(StageFolder)\Plugins</StagePluginsFolder>
+	  <PluginName></PluginName>
+	  <PluginTarget></PluginTarget>
+	  <!-- Change to your theme name -->
+	  <ThemeName>CMS</ThemeName>
 	</PropertyGroup>
-	
-	<!-- Define Additional Plugins -->
-	<ItemGroup>
-		<AdditionalPlugins Include="SmartStore.AuthorizeNet" />
-	    <AdditionalPlugins Include="SmartStore.Glimpse" />
-	    <AdditionalPlugins Include="SmartStore.DiscountRules.PurchasedProducts" />
-	    <AdditionalPlugins Include="SmartStore.TwitterAuth" />
-	    <AdditionalPlugins Include="SmartStore.MailChimp" />
-	    <AdditionalPlugins Include="SmartStore.Fedex" />
-	    <AdditionalPlugins Include="SmartStore.UPS" />
-	    <AdditionalPlugins Include="SmartStore.USPS" />
-	    <AdditionalPlugins Include="SmartStore.Verizon" />
-	    <AdditionalPlugins Include="SmartStore.LivePersonChat" />
-	</ItemGroup>
-	
-	<!-- Define Pro Plugins -->
-	<ItemGroup>
-		<ProPlugins Include="SmartStore.CommonExportProviders" />
-		<ProPlugins Include="SmartStore.ContentSlider" />
-		<ProPlugins Include="SmartStore.MegaMenu" />
-		<ProPlugins Include="SmartStore.MegaSearch" />
-		<ProPlugins Include="SmartStore.PaymentFilter" />	
-		<ProPlugins Include="SmartStore.PdfExport" />
-		<ProPlugins Include="SmartStore.ShippingFilter" />
-    	<ProPlugins Include="SmartStore.UrlRewriter" />
-		<ProPlugins Include="SmartStore.Gdpr" />
-		<ProPlugins Include="SmartStore.EasyCredit" />
-		<ProPlugins Include="SmartStore.MediaManager" />
-	</ItemGroup>
-	
-	<!-- Define Premium Plugins -->
-	<ItemGroup>
-		<PremiumPlugins Include="SmartStore.Azure" />
-		<PremiumPlugins Include="SmartStore.BMECat" />
-		<PremiumPlugins Include="SmartStore.MegaSearchPlus" />
-		<PremiumPlugins Include="SmartStore.OpenTrans" />
-		<PremiumPlugins Include="SmartStore.OutputCache" />
-		<PremiumPlugins Include="SmartStore.TinyImage" />
-    		<PremiumPlugins Include="SmartStore.Wallet" />
-	</ItemGroup>
-	
-	<!-- Define Enterprise Plugins -->
-	<ItemGroup>
-		<EntPlugins Include="SmartStore.Redis" />
-		<EntPlugins Include="SmartStore.ShopConnector" />	
-    	<EntPlugins Include="SmartStore.PowerBi" />	
-	</ItemGroup>
-	
-	<!-- Define commercial Marketplace Plugins -->
-	<ItemGroup>
-		<MarketplacePlugins Include="SmartStore.AccardaKar" />
-		<MarketplacePlugins Include="SmartStore.BeezUp" />
-		<MarketplacePlugins Include="SmartStore.Billiger" />
-		<MarketplacePlugins Include="SmartStore.BizImporter" />
-		<MarketplacePlugins Include="SmartStore.Debitoor" />
-		<MarketplacePlugins Include="SmartStore.DiscountRules.HasPaymentMethod" />
-		<MarketplacePlugins Include="SmartStore.DiscountRules.HasShippingOption" />
-		<MarketplacePlugins Include="SmartStore.ElmarShopinfo" />
-		<MarketplacePlugins Include="SmartStore.ETracker" />
-    	<MarketplacePlugins Include="SmartStore.GoogleRemarketing" />
-		<MarketplacePlugins Include="SmartStore.Guenstiger" />
-		<MarketplacePlugins Include="SmartStore.IPayment" />
-		<MarketplacePlugins Include="SmartStore.NewsImporter" />
-		<MarketplacePlugins Include="SmartStore.OrderNumberFormatter" />
-    	<MarketplacePlugins Include="SmartStore.PayDirekt" />
-		<MarketplacePlugins Include="SmartStore.Payone" />
-		<MarketplacePlugins Include="SmartStore.PostFinanceECommerce" />
-		<MarketplacePlugins Include="SmartStore.RemoveBadge" />
-		<MarketplacePlugins Include="SmartStore.SearchLog" />
-		<MarketplacePlugins Include="SmartStore.Shopwahl" />
-		<MarketplacePlugins Include="SmartStore.Skrill" />
-		<MarketplacePlugins Include="SmartStore.Sofortueberweisung" />
-		<MarketplacePlugins Include="SmartStore.TrustedShops" />
-		<MarketplacePlugins Include="SmartStore.Viveum" />
-		<MarketplacePlugins Include="SmartStore.EmailReminder" />
-		<MarketplacePlugins Include="SmartStore.PageBuilder" />
-		<MarketplacePlugins Include="SmartStore.Heidelpay" />
-    		<MarketplacePlugins Include="SmartStore.GeoBlocker" />
-		<MarketplacePlugins Include="SmartStore.PersonalPromo" />
-		<MarketplacePlugins Include="SmartStore.CoronaTaxReducer" />
-	</ItemGroup>
-	
-	<!-- Define Unused Plugins -->
-	<ItemGroup>
-		<UnusedPlugins Include="SmartStore.DemoShopControlling" />
-		<UnusedPlugins Include="SmartStore.AustraliaPost" />
-		<UnusedPlugins Include="SmartStore.CanadaPost" />
-		<UnusedPlugins Include="Srt.ErpConnector" />
-	</ItemGroup>
 
-	<ItemGroup>
-		<UnusedPluginsHp Include="SmartStore.DemoShopControlling" />
-		<UnusedPluginsHp Include="SmartStore.AustraliaPost" />
-		<UnusedPluginsHp Include="SmartStore.CanadaPost" />
-		<UnusedPluginsHp Include="Srt.ErpConnector" />
-		<UnusedPluginsHp Include="SmartStore.AuthorizeNet" />
-		<UnusedPluginsHp Include="SmartStore.Fedex" />
-		<UnusedPluginsHp Include="SmartStore.LivePersonChat" />
-		<UnusedPluginsHp Include="SmartStore.MailChimp" />
-		<UnusedPluginsHp Include="SmartStore.UPS" />
-		<UnusedPluginsHp Include="SmartStore.USPS" />
-		<UnusedPluginsHp Include="SmartStore.Verizon" />
-		<UnusedPluginsHp Include="SmartStore.AccardaKar" />
-		<UnusedPluginsHp Include="SmartStore.BeezUp" />
-		<UnusedPluginsHp Include="SmartStore.Billiger" />
-		<UnusedPluginsHp Include="SmartStore.BizImporter" />
-		<UnusedPluginsHp Include="SmartStore.BMEcat" />
-		<UnusedPluginsHp Include="SmartStore.Debitoor" />
-		<UnusedPluginsHp Include="SmartStore.DiscountRules.HasPaymentMethod" />
-		<UnusedPluginsHp Include="SmartStore.DiscountRules.HasShippingOption" />
-		<UnusedPluginsHp Include="SmartStore.EasyCredit" />
-		<UnusedPluginsHp Include="SmartStore.ElmarShopinfo" />
-		<UnusedPluginsHp Include="SmartStore.Guenstiger" />
-		<UnusedPluginsHp Include="SmartStore.NewsImporter" />
-		<UnusedPluginsHp Include="SmartStore.OpenTrans" />
-		<UnusedPluginsHp Include="SmartStore.PayDirekt" />
-		<UnusedPluginsHp Include="SmartStore.PaymentFilter" />
-		<UnusedPluginsHp Include="SmartStore.Payone" />
-		<UnusedPluginsHp Include="SmartStore.PdfExport" />
-		<UnusedPluginsHp Include="SmartStore.PostFinanceECommerce" />
-		<UnusedPluginsHp Include="SmartStore.Santander" />
-		<UnusedPluginsHp Include="SmartStore.ShippingFilter" />
-		<UnusedPluginsHp Include="SmartStore.ShopConnector" />
-		<UnusedPluginsHp Include="SmartStore.Shopwahl" />
-		<UnusedPluginsHp Include="SmartStore.Skrill" />
-		<UnusedPluginsHp Include="SmartStore.Sofortueberweisung" />
-		<UnusedPluginsHp Include="SmartStore.TrustedShops" />
-		<UnusedPluginsHp Include="SmartStore.Viveum" />
-		<UnusedPluginsHp Include="SmartStore.WebApi" />
-		<UnusedPluginsHp Include="SmartStore.Clickatell" />
-		<UnusedPluginsHp Include="SmartStore.GoogleMerchantCenter" />
-		<UnusedPluginsHp Include="SmartStore.CoronaTaxReducer" />
-	</ItemGroup>
-	
-	<ItemGroup>
-		<HpPlugins Include="SmartStore.Dlm" />
-		<HpPlugins Include="SmartStore.Faq" />
-		<HpPlugins Include="SmartStore.Marketplace" />
-		<HpPlugins Include="SmartStore.Timeline" />
-		<HpPlugins Include="SmartStore.Showcase" />
-		<HpPlugins Include="SmartStore.HomePage" />
-	</ItemGroup>
-	
-  <Target Name="PreDeploy">
-    <CallTarget Targets="Clean"/>
-    <CallTarget Targets="Compile"/>
-    <CallTarget Targets="Stage"/>
-  </Target>
-  
-	<Target Name="DeployCore" DependsOnTargets="PreDeploy">
-	    <MakeDir Directories="$(BuildFolder)\AdditionalPlugins" />
-	    <MakeDir Directories="$(BuildFolder)\ProPlugins" />
-	    <MakeDir Directories="$(BuildFolder)\PremiumPlugins" />
-	    <MakeDir Directories="$(BuildFolder)\EnterprisePlugins" />
-	    <MakeDir Directories="$(BuildFolder)\MarketplacePlugins" />
-	    <MakeDir Directories="$(BuildFolder)\HpPlugins" />
-	    
-	    <RemoveDir Directories="$(StagePluginsFolder)\%(UnusedPlugins.Identity)" />
-
-	    <MSBuild Targets="MovePlugin" Projects="$(MSBuildProjectFullPath)" Properties="PluginTarget=AdditionalPlugins; PluginName=%(AdditionalPlugins.Identity)" />
-	    <MSBuild Targets="MovePlugin" Projects="$(MSBuildProjectFullPath)" Properties="PluginTarget=ProPlugins; PluginName=%(ProPlugins.Identity)" />
-	    <MSBuild Targets="MovePlugin" Projects="$(MSBuildProjectFullPath)" Properties="PluginTarget=PremiumPlugins; PluginName=%(PremiumPlugins.Identity)" />
-	    <MSBuild Targets="MovePlugin" Projects="$(MSBuildProjectFullPath)" Properties="PluginTarget=EnterprisePlugins; PluginName=%(EntPlugins.Identity)" />
-	    <MSBuild Targets="MovePlugin" Projects="$(MSBuildProjectFullPath)" Properties="PluginTarget=MarketplacePlugins; PluginName=%(MarketplacePlugins.Identity)" />
-	    <MSBuild Targets="MovePlugin" Projects="$(MSBuildProjectFullPath)" Properties="PluginTarget=HpPlugins; PluginName=%(HpPlugins.Identity)" />
-	    
-		<CallTarget Targets="Package-Zip" />
+	<Target Name="PreDeploy">
+	  <CallTarget Targets="Clean"/>
+	  <CallTarget Targets="Compile"/>
+	  <CallTarget Targets="Stage"/>
 	</Target>
 
-  <Target Name="DeployPro" DependsOnTargets="PreDeploy">
-    <RemoveDir Directories="$(StagePluginsFolder)\%(EntPlugins.Identity)" />
-    <RemoveDir Directories="$(StagePluginsFolder)\%(PremiumPlugins.Identity)" />
-    <RemoveDir Directories="$(StagePluginsFolder)\%(MarketplacePlugins.Identity)" />
-    <!--<RemoveDir Directories="$(StagePluginsFolder)\%(AdditionalPlugins.Identity)" />-->
-    <RemoveDir Directories="$(StagePluginsFolder)\%(UnusedPlugins.Identity)" />
-    <RemoveDir Directories="$(StagePluginsFolder)\%(HpPlugins.Identity)" />
-  </Target>
-  <Target Name="DeployProZip" DependsOnTargets="DeployPro">
-    <MSBuild Projects="$(MSBuildProjectFullPath)" Properties="ZipDirectory=$(ZipDirectory); ZipFileSuffix=.Pro" Targets="Package-Zip" />
-  </Target>
-
-  <Target Name="DeployPremium" DependsOnTargets="PreDeploy">
-    <RemoveDir Directories="$(StagePluginsFolder)\%(EntPlugins.Identity)" />
-    <RemoveDir Directories="$(StagePluginsFolder)\%(MarketplacePlugins.Identity)" />
-    <!--<RemoveDir Directories="$(StagePluginsFolder)\%(AdditionalPlugins.Identity)" />-->
-    <RemoveDir Directories="$(StagePluginsFolder)\%(UnusedPlugins.Identity)" />
-    <RemoveDir Directories="$(StagePluginsFolder)\%(HpPlugins.Identity)" />
-  </Target>
-  <Target Name="DeployPremiumZip" DependsOnTargets="DeployPremium">
-    <MSBuild Projects="$(MSBuildProjectFullPath)" Properties="ZipDirectory=$(ZipDirectory); ZipFileSuffix=.Premium" Targets="Package-Zip" />
-  </Target>
-
-  <Target Name="DeployEnterprise" DependsOnTargets="PreDeploy">
-    <RemoveDir Directories="$(StagePluginsFolder)\%(MarketplacePlugins.Identity)" />
-    <!--<RemoveDir Directories="$(StagePluginsFolder)\%(AdditionalPlugins.Identity)" />-->
-    <RemoveDir Directories="$(StagePluginsFolder)\%(UnusedPlugins.Identity)" />
-    <RemoveDir Directories="$(StagePluginsFolder)\%(HpPlugins.Identity)" />
-  </Target>
-  <Target Name="DeployEnterpriseZip" DependsOnTargets="DeployEnterprise">
-    <MSBuild Projects="$(MSBuildProjectFullPath)" Properties="ZipDirectory=$(ZipDirectory); ZipFileSuffix=.Enterprise" Targets="Package-Zip" />
-  </Target>
-
-  <Target Name="DeployFull" DependsOnTargets="PreDeploy">
-    <RemoveDir Directories="$(StagePluginsFolder)\%(UnusedPlugins.Identity)" />
-   
-  </Target>
-  <Target Name="DeployFullZip" DependsOnTargets="DeployFull">
-    <MSBuild Projects="$(MSBuildProjectFullPath)" Properties="ZipDirectory=$(ZipDirectory); ZipFileSuffix=.Full" Targets="Package-Zip" />
-  </Target>
+	<Target Name="DeployWithPlugins" DependsOnTargets="PreDeploy">
+	  <CreateItem Include="$(MSBuildProjectDirectory)\..\">
+	    <Output ItemName="MSBuildProjectParentDirectory" TaskParameter="Include"/>
+	  </CreateItem>
+	  <Message Text="%(MSBuildProjectParentDirectory.Fullpath)"/>
+	  <CreateProperty Value="%(MSBuildProjectParentDirectory.Fullpath)">
+	    <Output PropertyName="CodeFolder" TaskParameter="Value"/>
+	  </CreateProperty>
+	  <ItemGroup>
+	  	<CommercialPlugins Include="$(CodeFolder)\commercial-plugins\**\*.*" />
+	  </ItemGroup>
+	  <Copy SourceFiles="@(CommercialPlugins)" DestinationFolder="$(BuildFolder)\Web\Plugins\%(RecursiveDir)" />
+	  <Delete Files="$(BuildFolder)\Web\Plugins\create-symlinks.bat" />
+	</Target>
+	<Target Name="DeployWithPluginsZip" DependsOnTargets="DeployWithPlugins">
+	  <MSBuild Projects="$(MSBuildProjectFullPath)" Properties="ZipDirectory=$(ZipDirectory); ZipFileSuffix=.Full" Targets="Package-Zip" />
+	</Target>
 	
-	<Target Name="DeployHp" DependsOnTargets="DeployFull">
-      <RemoveDir Directories="$(StagePluginsFolder)\%(UnusedPluginsHp.Identity)" />
-      
+	<Target Name="DeployTheme" DependsOnTargets="DeployFull" Condition=" '$(ThemeName)' != '' ">
       <!-- move theme content -->
       <ItemGroup>
-	  	<ThemeFiles Include="$(WebThemesFolder)\HP\preview.png" />
-	  	<ThemeFiles Include="$(WebThemesFolder)\HP\theme.config" />
-  	  	<ThemeFolderViews Include="$(WebThemesFolder)\HP\Views\**\*.*" />
-  		<ThemeFolderContent Include="$(WebThemesFolder)\HP\Content\**\*.*" />
-  		<ThemeFolderScripts Include="$(WebThemesFolder)\HP\Scripts\**\*.*" />
+	  	<ThemeFiles Include="$(WebThemesFolder)\$(ThemeName)\preview.png" />
+	  	<ThemeFiles Include="$(WebThemesFolder)\$(ThemeName)\theme.config" />
+  	  	<ThemeFolderViews Include="$(WebThemesFolder)\$(ThemeName)\Views\**\*.*" />
+  		<ThemeFolderContent Include="$(WebThemesFolder)\$(ThemeName)\Content\**\*.*" />
+  		<ThemeFolderScripts Include="$(WebThemesFolder)\$(ThemeName)\Scripts\**\*.*" />
 	  </ItemGroup>
 	  
-      <Copy SourceFiles="@(ThemeFiles)" DestinationFolder="$(BuildFolder)\Web\Themes\HP\" />
-      <Copy SourceFiles="@(ThemeFolderViews)" DestinationFolder="$(BuildFolder)\Web\Themes\HP\Views\%(RecursiveDir)" />
-      <Copy SourceFiles="@(ThemeFolderContent)" DestinationFolder="$(BuildFolder)\Web\Themes\HP\Content\%(RecursiveDir)" />
-      <Copy SourceFiles="@(ThemeFolderScripts)" DestinationFolder="$(BuildFolder)\Web\Themes\HP\Scripts\%(RecursiveDir)" />
-      <Copy SourceFiles="@(ThemeFolderResources)" DestinationFolder="$(BuildFolder)\Web\Themes\HP\_Resources\%(RecursiveDir)" />
+      <Copy SourceFiles="@(ThemeFiles)" DestinationFolder="$(BuildFolder)\Web\Themes\$(ThemeName)\" />
+      <Copy SourceFiles="@(ThemeFolderViews)" DestinationFolder="$(BuildFolder)\Web\Themes\$(ThemeName)\Views\%(RecursiveDir)" />
+      <Copy SourceFiles="@(ThemeFolderContent)" DestinationFolder="$(BuildFolder)\Web\Themes\$(ThemeName)\Content\%(RecursiveDir)" />
+      <Copy SourceFiles="@(ThemeFolderScripts)" DestinationFolder="$(BuildFolder)\Web\Themes\$(ThemeName)\Scripts\%(RecursiveDir)" />
+      <Copy SourceFiles="@(ThemeFolderResources)" DestinationFolder="$(BuildFolder)\Web\Themes\$(ThemeName)\_Resources\%(RecursiveDir)" />
+      
+      <!-- If you have created a theme project uncomment the following lines -->
       
       <!-- move theme dll to bin -->
-      <MSBuild Projects="$(WebFolder)\Themes\HP\SmartStore.Themes.HP.csproj"
+      <!--
+      <MSBuild Projects="$(WebFolder)\Themes\$(ThemeName)\SmartStore.Themes.$(ThemeName).csproj"
 		   Targets="_CopyWebApplication"
-		   Properties="WebProjectOutputDir=$(StageFolder)\Themes\HP\;
-		   OutDir=$(StageFolder)\Themes\HP\bin\;Configuration=$(Configuration)" />
+		   Properties="WebProjectOutputDir=$(StageFolder)\Themes\$(ThemeName)\;
+		   OutDir=$(StageFolder)\Themes\$(ThemeName)\bin\;Configuration=$(Configuration)" />
 		   
-      <CreateItem Include="$(StageFolder)\Themes\HP\bin\*.dll">
+      <CreateItem Include="$(StageFolder)\Themes\$(ThemeName)\bin\*.dll">
         <Output TaskParameter="Include" ItemName="ThemeCompileOutput" />
       </CreateItem>
 	  <Copy SourceFiles="@(ThemeCompileOutput)" DestinationFolder="$(StageFolder)\bin\" />
-      
-      <CreateItem Include="$(SrcFolder)\..\..\create-hp-tenant.bat">
-        <Output TaskParameter="Include" ItemName="CreateHpTenantBat" />
-      </CreateItem>
-	  <Copy SourceFiles="@(CreateHpTenantBat)" DestinationFolder="$(StageFolder)" />
+      -->
       
       <!-- move theme depedencies to bin -->
+      <!--
       <ItemGroup>
 	      <CommonMarkDll Include="$(SrcFolder)\packages\CommonMark.NET.0.15.1\lib\net45\**\*.dll"/>
-	      <OctokitDll Include="$(SrcFolder)\packages\Octokit.0.29.0\lib\net45\**\*.dll"/>
       </ItemGroup>
       <Copy SourceFiles="@(CommonMarkDll)" DestinationFolder="$(StageFolder)\bin\" />
-      <Copy SourceFiles="@(OctokitDll)" DestinationFolder="$(StageFolder)\bin\" />
-      
-      <!-- delete \bin in SmartStore.Hp -->
-	  <RemoveDir Directories="$(StageFolder)\Themes\HP\bin\" />
-		
+      -->
+      <!-- delete \bin in SmartStore.Theme -->
+      <!--
+	  <RemoveDir Directories="$(StageFolder)\Themes\$(ThemeName)\bin\" />
+	  -->
 	</Target>
-    <Target Name="DeployHpZip" DependsOnTargets="DeployHp">
+	
+    <Target Name="DeployThemeZip" DependsOnTargets="DeployTheme">
       <MSBuild Projects="$(MSBuildProjectFullPath)" Properties="ZipDirectory=$(ZipDirectory); ZipFileSuffix=.Full" Targets="Package-Zip" />
 	</Target>
 	

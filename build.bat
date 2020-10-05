@@ -40,8 +40,8 @@ echo "Unable to detect suitable environment. Build may not succeed."
 cd /d %~dp0SmartStoreNET
 
 echo "Restoring NuGet packages"
-lib\nuget\nuget.exe restore "src\SmartStoreNET.Full-sym.sln"
+lib\nuget\nuget.exe restore "src\SmartStoreNET.Dev-sym.sln"
 
-%msbuild% SmartStoreNET.Full-sym.proj /p:SlnName=SmartStoreNET.Full-sym /m /p:DebugSymbols=false /p:DebugType=None /maxcpucount %*
+%msbuild% SmartStoreNET.Dev-sym.proj /p:SlnName=SmartStoreNET.Dev-sym /m /p:DebugSymbols=false /p:DebugType=None /maxcpucount %*
 
 :end

@@ -1,7 +1,7 @@
 @echo off
 cls
-echo Building SmartStore.NET Full...   											
+echo Building Smartstore with plugins & themes + Zip ...   											
 
-call build.bat /t:DeployFullZip
+call build.bat /t:DeployThemeZip
 
 pause
