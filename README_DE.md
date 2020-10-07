@@ -1,4 +1,4 @@
-# SmartStoreDEV
+# Smartstore Solution Template
 
 Dieses Repository soll Entwickler in die Lage versetzen, in einer perfekten Entwicklungsumgebung für die Entwicklung von Plugins, Tests oder Themes, inklusive aller möglichen Deployment-Szenarien arbeiten zu können. 
 
