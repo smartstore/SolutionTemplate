@@ -295,7 +295,6 @@ _temp/
 /src/Presentation/SmartStore.Web/[Ee]xchange/*
 
 Kopie von*
-src/build/nop.*
 docs/internal
 
 # Themes
@@ -305,5 +304,6 @@ docs/internal
 /res/Translator/*.log
 SmartStoreNET/
 
+# Commercial plugins
 /commercial-plugins/*
 !/commercial-plugins/create-symlinks.bat
